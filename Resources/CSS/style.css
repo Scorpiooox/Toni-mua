@@ -29,11 +29,11 @@ body {
     padding-top: 0.7rem;
    } */
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 3rem;
+    height: 4rem;
     font-family: 'Comforter Brush', cursive;
 }
 .header-subheading {
@@ -41,8 +41,8 @@ h1 {
     justify-content: center;
     align-content: center;
     width: auto;
-    margin-left: 20%;
-    font-size: 0.9rem;
+    margin-left: 27%;
+    font-size: 1.2rem;
     margin-top: 0.2rem;
     color: rgba(0,0,0,0.5);
 }
@@ -74,6 +74,7 @@ nav li {
 } */
 .about-section {
    display: flex;
+   flex-direction: row;
    flex-wrap: wrap;
    justify-content: center; 
    width: 100%;
@@ -88,7 +89,7 @@ nav li {
 .gallery {
     display: flex;
     height: auto;
-    width: 100%;
+    width: auto;
     background-repeat: no-repeat;
     background-position: center;
     position: static;
@@ -102,6 +103,37 @@ nav li {
     padding-top: 3rem;
 }
 
+/* portfolio images */
+.work-pics-container{
+    border-bottom: 0.1rem solid rgb(192, 192, 192);
+    padding-bottom: 50px;
+}
+.work-pics-container h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.work-pics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-inline: auto;
+    justify-content: space-around;
+}
+.gallery-wide {
+    width: auto;
+}
+
+/* Email capture/contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(192, 192, 192);
+    width: 20%;
+    margin-inline: auto;
+}
+
 @media only screen and (min-width: 410px) { 
    .header-container {
         width: 100%;
@@ -110,8 +142,7 @@ nav li {
         align-items: center;
         justify-content: space-between;
         align-content: center;
-        margin-inline: 0;
-        
+        margin-inline: 0;    
    } 
    .title-container {
     display: flex;
@@ -141,5 +172,20 @@ nav li {
     nav li:hover {
         color: rgb(192, 192, 192);
         cursor: pointer;
+    }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        width: 400px;
+        height: auto;
+    }
+    .gallery-wide {
+        width: 600px
+    }
+    .about-section p {
+        margin-inline: 20%;
     }
 }
