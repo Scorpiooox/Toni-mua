@@ -111,6 +111,38 @@ h3 {
 .about-section p {
     margin-inline: 20%;
 }
+
+/* Price List */
+.price-list {
+    margin: auto;
+    margin-block: 50px;
+    width: 70%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+.price-list-header {
+    margin-bottom: 1.5rem;
+}
+.center {
+    text-align: center;
+}
+table {
+    width: 100%;
+    flex-shrink: 3;
+    flex-grow: 2;
+    flex-basis: auto;
+}
+.left {
+   text-align: left; 
+}
+.right {
+    text-align: right;
+}
+.normal-font {
+    font-weight: lighter;
+}
+
 /* portfolio */
 .work-pics-container {
     display: flex;
