@@ -47,7 +47,6 @@ h1 {
     color: rgba(0,0,0,0.5);
 }
 
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -134,61 +133,4 @@ form {
     border: 1px solid rgb(192, 192, 192);
     width: 20%;
     margin-inline: auto;
-}
-
-@media only screen and (min-width: 410px) { 
-   .header-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        align-content: center;
-        margin-inline: 0;    
-   } 
-   .title-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    padding-top: 0.7rem;
-   }
-   .nav-container {
-        display: block;
-        justify-content: center;
-        width: 70%;
-        color: black;
-        position: relative;
-        padding-inline: 1rem;
-        width: 100%;
-    }
-    nav li {
-        display: inline-flex;
-        font-size: 1.2rem;
-        font-weight: 700;
-        padding-inline: 1rem;
-        color:black
-    }
-    .home {
-        color: rgb(192, 192, 192);
-    }
-    nav li:hover {
-        color: rgb(192, 192, 192);
-        cursor: pointer;
-    }
-    .about-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .gallery {
-        width: 100%;
-        height: auto;
-    }
-    .gallery-wide {
-        width: 100%;
-    }
-    .about-section p {
-        margin-inline: 20%;
-    }
 }
