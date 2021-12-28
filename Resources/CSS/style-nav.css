@@ -61,6 +61,7 @@ h1 {
     justify-content: center;
     color: black;
     padding-inline: 1rem;
+    margin-top: 4rem;
     width: 100%;
 }
 .nav-ul {
@@ -104,8 +105,8 @@ nav li a:hover {
     }
     .hamburger {
         display: block;
-        margin-right: auto;
-
+        margin-inline: auto;
+        margin-top: 2rem;
     }
 }
 

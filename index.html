@@ -4,11 +4,12 @@
         <title>Antonia Wood MUA</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width initial-scale=1">
-        <link href="./Resources/CSS/style.css" rel="stylesheet" media="only screen and (max-width: 576px)">
-        <link href="./Resources/CSS/style-desktop.css" rel="stylesheet" media="only screen and (min-width: 577px)">
+        <!-- <link href="./Resources/CSS/style.css" rel="stylesheet" media="only screen and (max-width: 576px)"> -->
+        <link href="./Resources/CSS/style.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Outfit:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
 
     <body>
@@ -17,14 +18,17 @@
             <h1>Antonia Wood</h1>
             <p class="header-subheading">Wedding and Event Make up</p>
             </div>
-            <nav class="nav-container">
-                <ul>
-                    <li class="home">Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Book Online</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
+            <nav class="nav-container main-menu">
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class=nav-ul id="nav-ul">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Book Online</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,7 +54,7 @@
             <section id="price-list" class="about-section">
                 <h3 class="price-list-header">Price List</h3>
                 <div class="price-list">
-                  <table  cellpadding="10" cellspacing="15">
+                  <table>
                     <thead>
                       <th colspan="2" class="center">Weddings</th>
                     </thead>
@@ -58,7 +62,7 @@
                     <tr></tr>
                     <tbody>
                       <tr>
-                        <th colspan="2" class="center">TRIALS</th>
+                        <th colspan="2" class="center top">TRIALS</th>
                         <td></td>
                       </tr>
                       <tr>
@@ -82,7 +86,7 @@
                         <td></td>
                     </tr>
                       <tr>
-                        <th colspan="2" class="center">WEDDING DAY</th>
+                        <th colspan="2" class="center top">WEDDING DAY</th>
                         <td></td>
                       </tr>
                       <tr>
@@ -106,7 +110,7 @@
                         <td></td>
                     </tr>
                     <tr>
-                        <th colspan="2" class="center">EVENTS</th>
+                        <th colspan="2" class="center top">EVENTS</th>
                         <td></td>
                     </tr>
                     <tr>
@@ -118,7 +122,7 @@
                     <tr>
                     </tr>
                     <tr>
-                        <th colspan="2" class="center">PROM PACKAGES</th>
+                        <th colspan="2" class="center top">PROM PACKAGES</th>
                         <td></td>
                     </tr>
                     <tr>
@@ -179,5 +183,6 @@
                 
             </footer>
         </main>
+        <script src="Resources/Javascript/script.js"></script>
     </body>
 </html>
