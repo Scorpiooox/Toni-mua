@@ -185,9 +185,6 @@ table {
     font-weight: lighter;
 }
 
-@media only screen and (min-width: 577px) {
-
-}
 
 /* portfolio */
 .work-pics-container {
@@ -215,4 +212,73 @@ table {
 }
 .gallery-portfolio:hover {
     box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+/* contact form */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 100px 100px;
+    width: 100%;
+}
+form {
+    width: 80%;
+}
+.contact-container h4 {
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.contact-container .input-box {
+    position: relative;
+    width: 100%;
+}
+.contact-container .input-box input,
+.contact-container .input-box textarea {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    outline: none;
+    resize: none;
+}  
+.contact-container .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000;
+}  
+
+.contact-container .input-box input:focus ~ span,
+.contact-container .input-box input:valid ~ span,
+.contact-container .input-box textarea:focus ~ span,
+.contact-container .input-box textarea:valid ~ span {
+    color: rgb(192, 192, 192);
+    font-size: 1rem;
+    transform: translateY(-20px);
+}
+.contact-container .input-box input[type="submit"] {
+    width: 100px;
+    background: #facd04;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 577px) {
+    .contact-container {
+        padding: 2rem 2rem;
+    }
+    form {
+        width: 100%;
+    }
 }
